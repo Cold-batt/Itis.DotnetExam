@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Itis.DotnetExam.UI.props" />
-</Project>
