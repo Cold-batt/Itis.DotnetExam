@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Itis.DotnetExam.DAL.props" />
+</Project>

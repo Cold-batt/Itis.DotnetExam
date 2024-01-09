@@ -1,0 +1,11 @@
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\bin\Debug\net7.0\Itis.DotnetExam.Models.deps.json
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\bin\Debug\net7.0\Itis.DotnetExam.Models.dll
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\bin\Debug\net7.0\Itis.DotnetExam.Models.pdb
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\Itis.DotnetExam.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\Itis.DotnetExam.Models.AssemblyInfoInputs.cache
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\Itis.DotnetExam.Models.AssemblyInfo.cs
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\Itis.DotnetExam.Models.csproj.CoreCompileInputs.cache
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\Itis.DotnetExam.Models.dll
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\refint\Itis.DotnetExam.Models.dll
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\Itis.DotnetExam.Models.pdb
+C:\Users\anton\repo\Itis.DotnetExam\Itis.DotnetExam.Models\obj\Debug\net7.0\ref\Itis.DotnetExam.Models.dll

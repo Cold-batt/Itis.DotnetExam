@@ -1,0 +1,32 @@
+﻿@using Itis.DotnetExam.Models
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using System.ComponentModel
+@model Itis.DotnetExam.Models.Monster
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <title>ДНД</title>
+</head>
+<body>
+<div class="card">
+    <div class="card-header">Настрой своего персонажа</div>
+    <form class="card-body" method="post" asp-controller="Game" asp-action="GetFightResult">
+        @foreach (var property in typeof(Player).GetProperties())
+        {
+            @Html.Label(property.GetCustomAttributes(true)
+                .Select(a => (a as DisplayNameAttribute)?.DisplayName)
+                .FirstOrDefault(name => name is not null) ?? property.Name)
+            @Html.Editor(property.Name, new { htmlAttributes = new { @class = "form-control" } })
+            <br/>
+        }
+        <input type="submit" class="btn btn-primary" value="Подтвердить"/>
+    </form>
+</div>
+</body>
+</html>

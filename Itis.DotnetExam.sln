@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itis.DotnetExam.UI", "Itis.DotnetExam.UI\Itis.DotnetExam.UI.csproj", "{2FD3F66E-A816-4415-A125-BA6C1491F1C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itis.DotnetExam.Core", "Itis.DotnetExam.Core\Itis.DotnetExam.Core.csproj", "{4607F0A7-3F39-4951-A87A-A3484F117D77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itis.DotnetExam.Models", "Itis.DotnetExam.Models\Itis.DotnetExam.Models.csproj", "{2AE33BA6-E405-4239-82FC-0BADD85EB0CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FD3F66E-A816-4415-A125-BA6C1491F1C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FD3F66E-A816-4415-A125-BA6C1491F1C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FD3F66E-A816-4415-A125-BA6C1491F1C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FD3F66E-A816-4415-A125-BA6C1491F1C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4607F0A7-3F39-4951-A87A-A3484F117D77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4607F0A7-3F39-4951-A87A-A3484F117D77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4607F0A7-3F39-4951-A87A-A3484F117D77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4607F0A7-3F39-4951-A87A-A3484F117D77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE33BA6-E405-4239-82FC-0BADD85EB0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE33BA6-E405-4239-82FC-0BADD85EB0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE33BA6-E405-4239-82FC-0BADD85EB0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE33BA6-E405-4239-82FC-0BADD85EB0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

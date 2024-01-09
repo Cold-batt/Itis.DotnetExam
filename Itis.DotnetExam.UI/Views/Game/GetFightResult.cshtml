@@ -1,0 +1,60 @@
+﻿@using System.ComponentModel
+@using Itis.DotnetExam.Models
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model Itis.DotnetExam.Models.FightResult
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Игрок @Model.Player.Name</h2>
+<p>Очки здоровья - @Model.Player.HitPoints</p>
+<p>Урон - @Model.Player.Damage</p>
+<p>Количество атак за раунд - @Model.Player.AttackPerRound</p>
+<p>Класс брони - @Model.Player.ArmorClass</p>
+<p>Модификатор атаки - @Model.Player.AttackModifier</p>
+<p>Модификатор урона - @Model.Player.DamageModifier</p>
+
+<h2>Монстр @Model.Monster.Name</h2>
+<p>Очки здоровья - @Model.Monster.HitPoints</p>
+<p>Урон - @Model.Monster.Damage</p>
+<p>Количество атак за раунд - @Model.Monster.AttackPerRound</p>
+<p>Класс брони - @Model.Monster.ArmorClass</p>
+<p>Модификатор атаки - @Model.Monster.AttackModifier</p>
+<p>Модификатор урона - @Model.Monster.DamageModifier</p>
+
+@foreach (var action in Model.Logs)
+{
+    <h2>@action.AttackerName</h2>
+    @for (int i = 0; i < action.DiceRoll.Length; i++)
+    {
+        <h3>АТАКА</h3>
+        <div> Кубик + модификатор: @action.DiceRoll[i] + @action.AttackModifier</div> 
+        <div> Результат удара: @action.HitResults[i] </div>
+        <div> Урон: @action.Damage[i] по защитнику -  @action.DefenderName</div>
+        <div> Здоровье противника: @action.DefenderName (@action.EnemyHp[i])</div>  
+    }                                              
+}
+<div>
+    <h1>Победил: @Model.Winner</h1>
+</div>
+
+
+<form class="card-body" method="post" asp-controller="Game" asp-action="GetFightResult">
+    <label>Имя</label>
+    <input type="text" value="@Model.Player.Name" name="Name" readonly="readonly"/><br>
+        <label>Класс брони</label>
+    <input type="number" value="@Model.Player.ArmorClass" name="ArmorClass" readonly="readonly"/><br>
+        <label>Урон</label>
+    <input type="text" value="@Model.Player.Damage" name="Damage" readonly="readonly"/><br>
+        <label>Модификатор атаки</label>
+    <input type="number" value="@Model.Player.AttackModifier" name="AttackModifier" readonly="readonly"/><br>
+        <label>Модификатор урона</label>
+    <input type="number" value="@Model.Player.DamageModifier" name="DamageModifier" readonly="readonly"/><br>
+        <label>ЗДоровье</label>
+    <input type="number" value="@Model.Player.HitPoints" name="HitPoints" readonly="readonly"/><br>
+    <label>Количество атак за раунд</label>
+    <input type="number" value="@Model.Player.AttackPerRound" name="AttackPerRound" readonly="readonly"/><br>
+    <input type="submit" class="btn btn-primary" value="Подтвердить" readonly="readonly"/>
+</form>
